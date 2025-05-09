@@ -86,7 +86,6 @@ def clear_patient(room_id: int):
 
 def set_patient(room_id: int, priority, patient):
     lbl = rooms[room_id]["patient"]
-
     text = format_patient(patient, priority)
     lbl.config(text=f"Patient: {text}")
     lbl.grid()
